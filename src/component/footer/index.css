@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.footer-container{
+    /* border: 2px solid black; */
+
+    width: 100%;
+}
+
+.footerA{
+    width: 100%;
+    border-bottom: 1px solid #c2d1d9;
+}
+
+.footerAA{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footerAA1{
+    width: 40%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footerAA11{
+    padding: 1rem;
+    width: 50%;
+}
+
+.footerAA11 p{
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: rgba(51, 51, 51, 0.87);
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    line-height: 2;
+}
+
+.footer-links a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #85858c;
+}
+
+.footerAA2{
+    width: 20%;
+    text-align: center;
+}
+
+.footerAA2 img{
+    padding: 2rem 0;
+    width: 4rem;
+}
+
+.footer-logo-name{
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.footer-logo-website{
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    color: #85858c;
+}
+
+.footerAA2 div{
+    text-align: center;
+}
+
+.footerAA3{
+    padding-right: 1rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footerAA3 p{
+    padding: 1.5rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(51, 51, 51, 0.87);
+}
+
+.footerAA3 div{
+    color:rgba(51, 51, 51, 0.87);
+    font-size: 0.95rem;
+    text-align: end;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.footerAA3 a button{
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    background: #2d8dfc;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+
+.footerB{
+    width: 100%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.footerB div{
+    width: 83%;
+    font-size: 0.9rem;
+    margin: 0 auto;
+    color:rgba(51, 51, 51, 0.87);
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .footerAA{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footerAA1{
+        display: none;
+    }
+
+    .footerAA2 img{
+        width: 5rem;
+        padding: 2rem 0;
+
+    }
+
+    .footerAA3{
+        padding: 0;
+        margin: 4rem 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerAA3 div{
+        text-align: center;
+    }
+
+    .footerB div{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+}

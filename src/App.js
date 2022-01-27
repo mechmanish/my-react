@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from "./component/header/index.js";
+import MovingFrwrd from './component/movingForward/index.js';
+import HowItWorks from './component/howItWorks/index.js';
+import ReadyToDiveIn from './component/readyToDiveIn/index.js';
+import TrstdBy from './component/trustedBy/index.js';
+import StayInTouch from './component/stayInTouch/index.js';
+import Footer from './component/footer/index.js';
+import SmllOffers from './component/smallOfferSection';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <MovingFrwrd />
+      <SmllOffers />
+      <HowItWorks />
+      <ReadyToDiveIn />
+      <TrstdBy />
+      <StayInTouch />
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.topMst-container{
+    width: 100%;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.frst-box{
+    /* border: 1px solid black; */
+
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.bckgrnd-circle{
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bckgrnd-laptop{
+    max-width: 100%;
+    position: absolute;
+    top: 250px;
+    right: 0;
+    
+}
+
+.bckgrnd-shwd{
+    /* border: 1px solid red; */
+
+    width: 100%;
+    height: 41rem;
+    background: linear-gradient(
+        180deg
+        ,#fff,hsla(0,0%,100%,0)),linear-gradient(
+        180deg
+        ,#e5f1ff,#e5f1ff),linear-gradient(
+        180deg
+        ,#e5f1ff,#e5f1ff);
+}
+
+.mvng-frwrd{
+    /* border: 1px solid red; */
+
+    text-align: center;
+    width: 100%;
+    /* height: 18rem; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: absolute;
+    top: 186px;
+}
+
+.mvng-frwrd h2{
+    color: #4c4d4d;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+
+}
+
+.mvng-frwrd p{
+    color: #818385;
+    font-size: 1.25rem;
+    max-width: 45%;
+    line-height: 1.5;
+}
+
+.mvng-frwrd button{
+    /* border: 1px solid blue; */
+
+
+    margin-top: 2rem;
+    width: 10.5rem;
+    height: 2.5rem;
+    color: white;
+    background: #2d8dfc;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+
+}
+
+
+@media screen and (max-width: 960px){
+    .bckgrnd-laptop{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .bckgrnd-laptop{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .bckgrnd-shwd{
+        height: 48rem;
+    }
+}

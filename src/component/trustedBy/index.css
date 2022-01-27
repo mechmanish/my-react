@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.trusted-container{
+    /* border: 2px solid black; */
+
+    width: 100%;
+    margin-top: 7rem;
+}
+
+.trusted-heading h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    color:rgba(51, 51, 51, 0.87);
+}
+
+.trusted-brands{
+    /* border: 1px solid blue; */
+
+    width: 100%;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.trusted-brands div{
+    width: 22%;
+    height: 10rem;
+}
+
+.trusted-brands div img{
+    /* border: 1px solid red; */
+
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.feedbacks{
+    /* border: 1px solid orange; */
+
+    width: 88%;
+    /* height: 16.2rem; */
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2.5rem;
+    justify-content: center;
+
+}
+
+.feedback{
+    /* border: 1px solid blue; */
+
+    /* width: 40%; */
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 2px;
+    background: rgb(230, 241, 255);
+    padding: 0 20px 32px;
+    text-align: center;
+    box-shadow: 0 20px 15px rgba(0, 0, 0, 0.15);
+
+    position: relative;
+}
+
+.feedback p{
+    margin: 4rem 0 1rem;
+    line-height: 1.5;
+    color: rgba(51, 51, 51, 0.87);
+    font-weight: 400;
+}
+
+.feedback span{
+    display: block;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: rgba(51, 51, 51, 0.87);
+    font-weight: 400;
+}
+
+.feedback label{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: rgba(51, 51, 51, 0.87);
+}
+
+.quama{
+    position: absolute;
+    bottom: -3rem;
+    left: 2rem;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .trusted-brands{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .trusted-brands div{
+        width: 100%;
+    }
+
+    .feedbacks{
+        margin-top: 0;
+        margin-bottom: 12rem;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 15%;
+    }
+}
